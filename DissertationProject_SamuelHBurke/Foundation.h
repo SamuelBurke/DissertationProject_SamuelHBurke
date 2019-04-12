@@ -6,6 +6,8 @@
 
 #include "Entity.h"
 #include "Window.h"
+#include "Input.h"
+#include "Snake.h"
 
 namespace Foundations
 {
@@ -25,11 +27,15 @@ public:
 
 private:
 	bool m_quit;
+	float m_deltaTime;
+	float m_lastTime;
+	float CalcDeltaTime();
 
 	std::vector<std::shared_ptr<Entity>> m_entities;
 	std::weak_ptr<Foundation> m_self;
 
 	Window m_window;
+	Input m_input;
 };
 
 template <typename T>

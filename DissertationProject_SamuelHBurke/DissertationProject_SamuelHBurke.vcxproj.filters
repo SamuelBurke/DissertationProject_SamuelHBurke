@@ -19,11 +19,14 @@
     <Filter Include="Source Files\Foundations">
       <UniqueIdentifier>{107dbff9-b4cf-4040-adfc-4e625cb2459d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Game - Snake">
+      <UniqueIdentifier>{bc62745e-b598-4101-ad3c-3cf431eb668f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game - Snake">
+      <UniqueIdentifier>{65281787-985b-4feb-b584-978e09304af0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Foundation.cpp">
       <Filter>Source Files\Foundations</Filter>
     </ClCompile>
@@ -41,6 +44,33 @@
     </ClCompile>
     <ClCompile Include="Transform.cpp">
       <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexArray.cpp">
+      <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexBuffer.cpp">
+      <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshRenderer.cpp">
+      <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Game - Snake</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Foundations</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake.cpp">
+      <Filter>Source Files\Game - Snake</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +91,30 @@
     </ClInclude>
     <ClInclude Include="Transform.h">
       <Filter>Header Files\Foundations</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>Header Files\Foundations</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexArray.h">
+      <Filter>Header Files\Foundations</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexBuffer.h">
+      <Filter>Header Files\Foundations</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\Foundations</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\Foundations</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshRenderer.h">
+      <Filter>Header Files\Foundations</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Game - Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake.h">
+      <Filter>Header Files\Game - Snake</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

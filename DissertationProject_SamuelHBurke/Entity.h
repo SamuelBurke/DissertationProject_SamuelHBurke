@@ -40,7 +40,7 @@ public:
 	std::shared_ptr<T> AddComponent()
 	{
 		ADDCOMPONENT
-			rtn->OnInit();
+		rtn->OnInit();
 
 		return rtn;
 	}

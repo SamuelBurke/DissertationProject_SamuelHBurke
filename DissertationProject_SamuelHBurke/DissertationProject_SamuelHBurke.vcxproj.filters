@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Game - Snake">
       <UniqueIdentifier>{65281787-985b-4feb-b584-978e09304af0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Audio Rendering Engine">
+      <UniqueIdentifier>{d9b5737c-f425-46a2-a41c-93ea9060079b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Audio Rendering Engine">
+      <UniqueIdentifier>{ff8db9fd-aa3f-4642-9a8d-153b3e2f7f04}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Foundation.cpp">
@@ -72,6 +78,9 @@
     <ClCompile Include="Snake.cpp">
       <Filter>Source Files\Game - Snake</Filter>
     </ClCompile>
+    <ClCompile Include="AudioMaster.cpp">
+      <Filter>Source Files\Audio Rendering Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Foundation.h">
@@ -115,6 +124,9 @@
     </ClInclude>
     <ClInclude Include="Snake.h">
       <Filter>Header Files\Game - Snake</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioMaster.h">
+      <Filter>Header Files\Audio Rendering Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

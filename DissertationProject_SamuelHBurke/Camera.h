@@ -7,8 +7,8 @@
 #include "Transform.h"
 #include "Window.h"
 
-#include <../../GLM/glm.hpp>
-#include <../../GLM/gtc/matrix_transform.hpp>
+#include "../../GLM/glm.hpp"
+#include "../../GLM/gtc/matrix_transform.hpp"
 
 namespace Foundations
 {

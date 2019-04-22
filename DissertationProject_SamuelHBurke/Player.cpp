@@ -24,7 +24,7 @@ void Player::Update(float _deltaTime)
 	if (m_input.isKeyPressed(SDL_SCANCODE_A) || m_input.isKeyPressed(SDL_SCANCODE_LEFT))  { m_direction = glm::vec3(-1.0f,  0.0f, 0.0f); }
 
 	m_playerPos = glm::vec3(m_direction * m_speed * _deltaTime);
-	m_transform->Translate(m_playerPos);
+	//m_transform->Translate(m_playerPos);
 }
 
 glm::vec3 Player::GetPlayerPosition()

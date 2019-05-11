@@ -3,6 +3,7 @@
 
 #include "Component.h"
 #include "Player.h"
+#include "AudioMaster.h"
 
 #include <memory>
 #include <../../GLM/glm.hpp>
@@ -31,6 +32,9 @@ private:
 	std::shared_ptr<Foundations::VertexArray> m_defaultCube;
 	std::shared_ptr<Foundations::Texture> m_defaultTexture;
 	std::shared_ptr<Foundations::Transform> m_transform;
+
+	std::shared_ptr<AudioEngine::AudioMaster> m_audio;
+
 };
 
 }

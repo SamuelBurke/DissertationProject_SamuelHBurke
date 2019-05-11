@@ -36,6 +36,7 @@ void MeshRenderer::OnDisplay()
 	glm::mat4 cube(1.0f);
 
 	glm::vec3 cubePos = GetFoundation()->GetComponent<Game::Snake>()->GetPlayerPosition();
+
 	cube = glm::translate(cube, cubePos);
 
 	m_shader->SetUniform("in_Model", cube);

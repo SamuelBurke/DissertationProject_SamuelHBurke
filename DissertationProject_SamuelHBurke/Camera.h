@@ -6,6 +6,8 @@
 #include "Component.h"
 #include "Transform.h"
 #include "Window.h"
+#include "Input.h"
+#include "AudioMaster.h"
 
 #include "../../GLM/glm.hpp"
 #include "../../GLM/gtc/matrix_transform.hpp"
@@ -28,13 +30,22 @@ private:
 	float m_radius;
 	float m_near;
 	float m_far;
+	glm::vec3 m_position;
+	
+	float m_cameraAngleX, m_cameraAngleY;
 
 	glm::vec3 m_cameraFront;
-	glm::vec3 m_cameraRight;
 	glm::vec3 m_cameraUp;
+	glm::vec3 m_cameraLeft;
+
 
 	Transform m_transform;
 	Window m_window;
+	Input m_input;
+
+	AudioEngine::AudioMaster m_audio;
+	
+	
 };
 }
 

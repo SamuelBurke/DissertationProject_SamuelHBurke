@@ -1,4 +1,5 @@
 #include "Foundation.h"
+//#include "AudioMaster.h"
 
 using namespace Foundations;
 
@@ -7,6 +8,7 @@ std::shared_ptr<Foundation> Foundation::Init()
 	std::shared_ptr<Foundation> rtn = std::make_shared<Foundation>();
 	rtn->m_quit = true;
 	rtn->m_self = rtn;
+
 
 	rtn->m_deltaTime = 0;
 	rtn->m_lastTime = SDL_GetTicks();

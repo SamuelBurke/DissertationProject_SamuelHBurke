@@ -77,6 +77,9 @@ struct AudioImpl
 	}
 };
 
+AudioMaster::AudioMaster()
+{}
+
 AudioMaster::AudioMaster(std::string _filePath)
 {
 	InitAudio();
@@ -126,14 +129,27 @@ void AudioMaster::Load(std::string _filePath)
 void AudioMaster::Play()
 {
 	ALuint sourceID = 0;
-	alGenSources(1, &sourceID);
-	alListener3f(AL_POSITION, 0.0f, 0.0f, 0.0f);
 
-	alSource3f(sourceID, AL_POSITION, 0.0f, 0.0f, 0.0f);
+	alGenSources(1, &sourceID);
+	alListener3f(AL_POSITION, m_listenerPosX, m_listenerPosY, m_listenerPosZ);
+
+	alSource3f(sourceID, AL_POSITION, m_sourcePosX, m_sourcePosY, m_sourcePosZ);
 	alSourcei(sourceID, AL_BUFFER, m_impl->id);
 	alSourcePlay(sourceID);
+}
 
-	//audioSources.push_back(sourceID);
+void AudioMaster::SetListener(float _x, float _y, float _z)
+{
+	m_listenerPosX = _x;
+	m_listenerPosY = _y;
+	m_listenerPosZ = _z;
+}
+
+void AudioMaster::SetSource(float _x, float _y, float _z)
+{
+	m_sourcePosX = _x;
+	m_sourcePosY = _y;
+	m_sourcePosZ = _z;
 }
 
 AudioMaster::~AudioMaster()

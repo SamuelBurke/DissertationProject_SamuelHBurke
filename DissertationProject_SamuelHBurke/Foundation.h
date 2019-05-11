@@ -7,6 +7,7 @@
 #include "Entity.h"
 #include "Window.h"
 #include "Input.h"
+#include "Camera.h"
 #include "Snake.h"
 
 namespace Foundations

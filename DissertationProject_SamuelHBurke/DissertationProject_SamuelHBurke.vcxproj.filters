@@ -81,6 +81,9 @@
     <ClCompile Include="AudioMaster.cpp">
       <Filter>Source Files\Audio Rendering Engine</Filter>
     </ClCompile>
+    <ClCompile Include="AudioSource.cpp">
+      <Filter>Source Files\Audio Rendering Engine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Foundation.h">
@@ -126,6 +129,9 @@
       <Filter>Header Files\Game - Snake</Filter>
     </ClInclude>
     <ClInclude Include="AudioMaster.h">
+      <Filter>Header Files\Audio Rendering Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSource.h">
       <Filter>Header Files\Audio Rendering Engine</Filter>
     </ClInclude>
   </ItemGroup>

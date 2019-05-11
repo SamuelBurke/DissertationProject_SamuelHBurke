@@ -11,6 +11,8 @@ void Snake::OnInit()
 	m_defaultCube = std::make_shared<Foundations::VertexArray>("../Resources/Models/cube.obj");
 	m_defaultTexture = std::make_shared<Foundations::Texture>("../Resources/Textures/default.png");
 
+	m_audio = std::make_shared<AudioEngine::AudioMaster>("../Resources/Audio/Pulsing_Hum.ogg");
+
 	m_player.Init(m_transform);
 }
 
@@ -19,6 +21,14 @@ void Snake::OnInit()
 void Snake::OnUpdate(float _deltaTime)
 {
 	m_player.Update(_deltaTime);
+
+	glm::vec3 pos = GetPlayerPosition();
+	m_audio->SetListener(-pos.x, pos.y, pos.z);
+
+	//m_audio->SetListener(0.0f, 0, 0);
+	m_audio->SetSource(0, 0, 0);
+
+	m_audio->Play();
 }
 
 std::shared_ptr<Foundations::VertexArray> Snake::GetModel()
